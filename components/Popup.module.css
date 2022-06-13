@@ -1,0 +1,31 @@
+
+.container {
+    padding: 50px ;
+    width: 20vw;
+    height: auto;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    color: var(--background);
+}
+
+.close {
+    width:20px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--background);
+    position: absolute;
+    right: 10px;
+    top:10px;
+    color: var(--background);
+    text-align: center;
+    font-size: 12px;    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
