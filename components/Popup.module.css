@@ -2,6 +2,7 @@
 .container {
     padding: 50px ;
     width: 20vw;
+    min-width: 250px;
     height: auto;
     position: fixed;
     bottom: 10px;
