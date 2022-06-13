@@ -1,0 +1,16 @@
+.button {
+    background-color: var(--nomineebackground);
+    width: 250px;
+    padding: 30px 30px;
+    font-size: 22px;
+    font-weight: 500;    
+    border: 1px solid black;
+}
+
+.button:hover {
+    background-color: var(--nomineebghover);
+}
+
+.button:disabled {
+    opacity: 0.5;
+}
