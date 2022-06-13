@@ -28,7 +28,7 @@ const Home: NextPage = () => {
     setShowPopup(true);
   };
   useEffect(() => {
-    fetch("http://localhost:3000/api/ballots")
+    fetch("/api/ballots")
       .then((res) => res.json())
       .then((json) => setTimeout(() => setAwards(json), 1000))
       .catch((err) => setError(err.message));
