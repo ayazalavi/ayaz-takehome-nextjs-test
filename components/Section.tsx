@@ -16,10 +16,10 @@ const Section = (props: Props) => {
   return (
     <div className={styles.section}>
       <span>{category.title}</span>
-      <div className={styles.nominees}>
-        {category.items.map((nominee) => (
-          <VoteContext.Consumer>
-            {({ votes }) => (
+      <VoteContext.Consumer>
+        {({ votes }) => (
+          <div className={styles.nominees}>
+            {category.items.map((nominee) => (
               <Card
                 nominee={nominee}
                 key={nominee.id}
@@ -33,10 +33,10 @@ const Section = (props: Props) => {
                   ) !== -1
                 }
               />
-            )}
-          </VoteContext.Consumer>
-        ))}
-      </div>
+            ))}
+          </div>
+        )}
+      </VoteContext.Consumer>
     </div>
   );
 };

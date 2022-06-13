@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useLayoutEffect, useRef, useState } from "react";
 import { VoteContext } from "../pages";
 import { Category } from "../types/ICategory";
@@ -20,7 +21,7 @@ const Card = (props: Props) => {
       {({ votes, showpopup, addVote }) => (
         <div className={selected ? styles.selected : styles.card}>
           <span>{nominee.title}</span>
-          <img src={nominee.photoUrL} />
+          <img src={nominee.photoUrL} alt="movie banner" />
           <button
             onClick={() => {
               addVote(nominee.id, category.id);
