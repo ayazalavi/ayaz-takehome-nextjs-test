@@ -20,4 +20,4 @@ COPY --from=builder /takehome-nextjs-test/node_modules ./node_modules
 COPY --from=builder /takehome-nextjs-test/package.json ./package.json
 
 EXPOSE 3000
-CMD ["yarn", "start"]
+CMD ["npm", "run", "start"]
