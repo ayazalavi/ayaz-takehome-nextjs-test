@@ -1,0 +1,13 @@
+ version: "3.7"
+ services:
+  app:
+    build:
+      context: .
+      target: runner
+    image: app
+    command: sh -c "npm run start"
+    ports:
+      - 3000:3000
+    working_dir: /app
+    volumes:
+      - ./:/app
