@@ -10,7 +10,7 @@ COPY --from=dependencies /takehome-nextjs-test/node_modules ./node_modules
 RUN npm run build
 
 FROM node:lts as runner
-WORKDIR /takehome-nextjs-test
+WORKDIR /app
 ENV NODE_ENV production
 # If you are using a custom next.config.js file, uncomment this line.
 # COPY --from=builder /my-project/next.config.js ./
